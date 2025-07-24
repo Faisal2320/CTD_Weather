@@ -64,7 +64,7 @@ function getWeatherData() {
 // If the location is not available, it will use the stored latitude and longitude from localStorage
 
 function getUserLocation() {
-  // check if latitude and longitude are already stored
+  // this check if latitude and longitude are already stored
   if (!localStorage.getItem("latitude") && !localStorage.getItem("longitude")) {
     // if not, get the user's location
     if (navigator.geolocation) {

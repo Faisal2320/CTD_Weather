@@ -1,23 +1,3 @@
-// /**
-//  * @typedef {object} Coordinates
-//  * @property {number} Latitude - The latitude of the location.
-//  * @property {number} Longitude - The longitude of the location.
-//  */
-
-// /**
-//  * @typedef {object.<string, Coordinates>} StateData
-//  */
-
-// /**
-//  * @typedef {object.<string, StateData>} CountriesStates
-//  */
-
-// /**
-//  * A JavaScript object containing countries and their corresponding states/provinces
-//  * with latitude and longitude coordinates. This is an expanded list based on the provided data.
-//  *
-//  * @type {CountriesStates}
-//  */
 const countriesStates = {
   Afghanistan: {
     Badakhshan: { Latitude: 36.734, Longitude: 70.811 },
