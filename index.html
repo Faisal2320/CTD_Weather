@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>CTD Weather Homepage</title>
+</head>
+<body>
+    <nav
+        class="navbar navbar-expand-sm navbar-dark bg-secondary sticky-top"
+    >
+        <a class="navbar-brand" href="index.html">CTD Weather</a>
+        <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html" aria-current="page"
+                        >Home</span></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="weather.html">World Weather</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0">
+                <input
+                    class="form-control me-sm-2"
+                    type="text"
+                    placeholder="Search"
+                />
+                <button class="btn btn-success my-2 my-sm-0" type="submit">
+                    Search
+                </button>
+            </form>
+        </div>
+    </nav>
+    <!-- Navbar Ends here -->
+
+
+
+
+
+    <section>
+        <div class="container-fluid video-section">
+
+        <div class="video-overlay text-info container-fluid">
+            <div class="p-5 mb-4 ">
+                <div  class="container-fluid py-5 ">
+                    <div class="container mt-4 text-center">
+                        <h1 class="display-5 fw-bold">Welcome to CTD Weather</h1>
+                        <p class="lead">
+                        Get real-time weather updates based on your location.<br/>
+                        Check temperatures, weather conditions, and explore forecasts with ease.
+                        </p>
+                    </div>
+                    
+                    <a id="showWeather" href="" class="btn btn-primary" type="button">Get My Location</a>
+                    <hr>
+                    <h3 id="message" class="text-info">How Your Town Weather Looks like</h3>
+                    <div id="display">
+                        <ul id="weatherInfo" class="list-unstyled">
+                        <li id="lihead"></li>
+                        <li>
+                            <img src="images/png/sunriseColor.png" class="img-fluid" alt="" />
+                            <span id="sunrise">Sunrise:</span>
+                        </li>
+                        <li>
+                            <img src="images/png/sunsetColor.png" class="img-fluid" alt="" />
+                            <span id="sunset">Sunset: </span>
+                        </li>
+                        <li>
+                            <img src="images/png/temperatureColor.png" class="img-fluid" alt=""/>
+                            <span id="temperature">Temperature: </span>
+                        </li>
+                        <li>
+                            <img src="images/png/rain.png" class="img-fluid" alt=""/>
+                            <span id="rain">Average Precipitation: </span>
+                        </li>
+                    </ul>
+                    </div>
+                      
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>

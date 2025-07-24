@@ -1,0 +1,11 @@
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('../images/threeWeather.png');
+  background-size: cover;        
+  background-repeat: no-repeat;   
+  background-attachment: fixed;   
+  background-position: center;   
+}

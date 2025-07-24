@@ -1,0 +1,279 @@
+// /**
+//  * @typedef {object} Coordinates
+//  * @property {number} Latitude - The latitude of the location.
+//  * @property {number} Longitude - The longitude of the location.
+//  */
+
+// /**
+//  * @typedef {object.<string, Coordinates>} StateData
+//  */
+
+// /**
+//  * @typedef {object.<string, StateData>} CountriesStates
+//  */
+
+// /**
+//  * A JavaScript object containing countries and their corresponding states/provinces
+//  * with latitude and longitude coordinates. This is an expanded list based on the provided data.
+//  *
+//  * @type {CountriesStates}
+//  */
+const countriesStates = {
+  Afghanistan: {
+    Badakhshan: { Latitude: 36.734, Longitude: 70.811 },
+    Badghis: { Latitude: 35.167, Longitude: 63.769 },
+    Baghlan: { Latitude: 36.174, Longitude: 68.708 },
+    Balkh: { Latitude: 36.755, Longitude: 66.897 },
+    Bamyan: { Latitude: 34.821, Longitude: 67.821 },
+    Daykundi: { Latitude: 33.666, Longitude: 66.371 },
+    Farah: { Latitude: 32.374, Longitude: 62.118 },
+    Faryab: { Latitude: 35.922, Longitude: 64.776 },
+    Ghazni: { Latitude: 33.555, Longitude: 68.417 },
+    Ghor: { Latitude: 34.522, Longitude: 65.253 },
+    Helmand: { Latitude: 31.587, Longitude: 64.361 },
+    Herat: { Latitude: 34.352, Longitude: 62.203 },
+    Jowzjan: { Latitude: 36.892, Longitude: 65.751 },
+    Kabul: { Latitude: 34.555, Longitude: 69.207 },
+    Kandahar: { Latitude: 31.62, Longitude: 65.71 },
+  },
+  Australia: {
+    "New South Wales": { Latitude: -31.84, Longitude: 145.612 },
+    Victoria: { Latitude: -37.471, Longitude: 144.785 },
+    Queensland: { Latitude: -20.917, Longitude: 142.702 },
+    "Western Australia": { Latitude: -25.27, Longitude: 122.77 },
+    "South Australia": { Latitude: -30.01, Longitude: 136.21 },
+    Tasmania: { Latitude: -41.454, Longitude: 145.97 },
+    "Northern Territory": { Latitude: -19.491, Longitude: 132.551 },
+    "Australian Capital Territory": { Latitude: -35.473, Longitude: 149.012 },
+  },
+  Brazil: {
+    Acre: { Latitude: -9.023, Longitude: -70.812 },
+    Alagoas: { Latitude: -9.665, Longitude: -36.65 },
+    Amapá: { Latitude: 1.413, Longitude: -51.774 },
+    Amazonas: { Latitude: -3.416, Longitude: -65.856 },
+    Bahia: { Latitude: -12.971, Longitude: -38.501 },
+    Ceará: { Latitude: -3.718, Longitude: -38.543 },
+    "Espírito Santo": { Latitude: -20.315, Longitude: -40.312 },
+    Goiás: { Latitude: -16.686, Longitude: -49.264 },
+    Maranhão: { Latitude: -2.538, Longitude: -44.282 },
+    "Mato Grosso": { Latitude: -15.601, Longitude: -56.097 },
+    "Minas Gerais": { Latitude: -18.918, Longitude: -44.291 },
+    Pará: { Latitude: -1.455, Longitude: -48.502 },
+    Paraíba: { Latitude: -7.119, Longitude: -34.845 },
+    Paraná: { Latitude: -25.428, Longitude: -49.273 },
+    Pernambuco: { Latitude: -8.047, Longitude: -34.877 },
+    Piauí: { Latitude: -5.091, Longitude: -42.803 },
+    "Rio de Janeiro": { Latitude: -22.906, Longitude: -43.172 },
+    "São Paulo": { Latitude: -23.55, Longitude: -46.633 },
+  },
+  Canada: {
+    Alberta: { Latitude: 53.933, Longitude: -116.576 },
+    "British Columbia": { Latitude: 53.726, Longitude: -127.647 },
+    Manitoba: { Latitude: 53.76, Longitude: -98.813 },
+    "New Brunswick": { Latitude: 46.565, Longitude: -66.461 },
+    "Newfoundland and Labrador": { Latitude: 53.135, Longitude: -57.66 },
+    "Nova Scotia": { Latitude: 44.681, Longitude: -63.744 },
+    Ontario: { Latitude: 51.253, Longitude: -85.323 },
+    "Prince Edward Island": { Latitude: 46.51, Longitude: -63.416 },
+    Quebec: { Latitude: 52.939, Longitude: -73.549 },
+    Saskatchewan: { Latitude: 52.939, Longitude: -106.45 },
+    "Northwest Territories": { Latitude: 64.825, Longitude: -124.845 },
+    Nunavut: { Latitude: 70.299, Longitude: -83.107 },
+    Yukon: { Latitude: 64.068, Longitude: -135.158 },
+  },
+  China: {
+    Beijing: { Latitude: 39.904, Longitude: 116.407 },
+    Shanghai: { Latitude: 31.23, Longitude: 121.473 },
+    Tianjin: { Latitude: 39.084, Longitude: 117.2 },
+    Chongqing: { Latitude: 29.563, Longitude: 106.551 },
+    Guangdong: { Latitude: 23.129, Longitude: 113.264 },
+    Sichuan: { Latitude: 30.651, Longitude: 104.075 },
+    Hubei: { Latitude: 30.592, Longitude: 114.305 },
+  },
+  Germany: {
+    Berlin: { Latitude: 52.52, Longitude: 13.404 },
+    Bavaria: { Latitude: 48.135, Longitude: 11.581 },
+    Hamburg: { Latitude: 53.551, Longitude: 9.993 },
+    Hesse: { Latitude: 50.11, Longitude: 8.682 },
+    Saxony: { Latitude: 51.05, Longitude: 13.737 },
+    "North Rhine-Westphalia": { Latitude: 51.475, Longitude: 7.216 },
+  },
+  India: {
+    "Andhra Pradesh": { Latitude: 15.912, Longitude: 79.74 },
+    "Arunachal Pradesh": { Latitude: 28.217, Longitude: 94.727 },
+    Assam: { Latitude: 26.2, Longitude: 92.937 },
+    Bihar: { Latitude: 25.096, Longitude: 85.313 },
+    Chhattisgarh: { Latitude: 21.278, Longitude: 81.866 },
+    Goa: { Latitude: 15.299, Longitude: 74.123 },
+    Gujarat: { Latitude: 22.258, Longitude: 71.192 },
+    Haryana: { Latitude: 29.058, Longitude: 76.085 },
+    "Himachal Pradesh": { Latitude: 31.104, Longitude: 77.173 },
+    Jharkhand: { Latitude: 23.61, Longitude: 85.279 },
+    Karnataka: { Latitude: 15.317, Longitude: 75.713 },
+    Kerala: { Latitude: 10.85, Longitude: 76.271 },
+    "Madhya Pradesh": { Latitude: 22.973, Longitude: 78.656 },
+    Maharashtra: { Latitude: 19.751, Longitude: 75.713 },
+    Manipur: { Latitude: 24.663, Longitude: 93.906 },
+    Meghalaya: { Latitude: 25.467, Longitude: 91.366 },
+    Mizoram: { Latitude: 23.164, Longitude: 92.937 },
+    Nagaland: { Latitude: 26.158, Longitude: 94.562 },
+    Odisha: { Latitude: 20.951, Longitude: 85.098 },
+    Punjab: { Latitude: 31.147, Longitude: 75.341 },
+    Rajasthan: { Latitude: 27.023, Longitude: 74.217 },
+    Sikkim: { Latitude: 27.532, Longitude: 88.512 },
+    "Tamil Nadu": { Latitude: 11.127, Longitude: 78.656 },
+    Telangana: { Latitude: 18.112, Longitude: 79.019 },
+    Tripura: { Latitude: 23.94, Longitude: 91.988 },
+    "Uttar Pradesh": { Latitude: 26.846, Longitude: 80.946 },
+    Uttarakhand: { Latitude: 30.066, Longitude: 79.019 },
+    "West Bengal": { Latitude: 22.986, Longitude: 87.855 },
+    Delhi: { Latitude: 28.704, Longitude: 77.102 },
+  },
+  "United States": {
+    Alabama: { Latitude: 32.318, Longitude: -86.902 },
+    Alaska: { Latitude: 64.2, Longitude: -149.493 },
+    Arizona: { Latitude: 34.048, Longitude: -111.093 },
+    Arkansas: { Latitude: 35.201, Longitude: -91.831 },
+    California: { Latitude: 36.778, Longitude: -119.417 },
+    Colorado: { Latitude: 39.55, Longitude: -105.782 },
+    Connecticut: { Latitude: 41.603, Longitude: -73.087 },
+    Delaware: { Latitude: 38.91, Longitude: -75.527 },
+    Florida: { Latitude: 27.664, Longitude: -81.515 },
+    Georgia: { Latitude: 32.165, Longitude: -82.9 },
+    Hawaii: { Latitude: 19.896, Longitude: -155.582 },
+    Idaho: { Latitude: 44.068, Longitude: -114.742 },
+    Illinois: { Latitude: 40.633, Longitude: -89.398 },
+    Indiana: { Latitude: 40.267, Longitude: -86.134 },
+    Iowa: { Latitude: 41.878, Longitude: -93.097 },
+    Kansas: { Latitude: 39.011, Longitude: -98.484 },
+    Kentucky: { Latitude: 37.839, Longitude: -84.27 },
+    Louisiana: { Latitude: 30.984, Longitude: -91.962 },
+    Maine: { Latitude: 45.253, Longitude: -69.445 },
+    Maryland: { Latitude: 39.045, Longitude: -76.641 },
+    Massachusetts: { Latitude: 42.407, Longitude: -71.382 },
+    Michigan: { Latitude: 44.314, Longitude: -85.602 },
+    Minnesota: { Latitude: 46.729, Longitude: -94.685 },
+    Mississippi: { Latitude: 32.354, Longitude: -89.398 },
+    Missouri: { Latitude: 37.964, Longitude: -91.831 },
+    Montana: { Latitude: 46.879, Longitude: -110.362 },
+    Nebraska: { Latitude: 41.492, Longitude: -99.901 },
+    Nevada: { Latitude: 38.802, Longitude: -116.419 },
+    "New Hampshire": { Latitude: 43.193, Longitude: -71.572 },
+    "New Jersey": { Latitude: 40.058, Longitude: -74.405 },
+    "New Mexico": { Latitude: 34.519, Longitude: -105.87 },
+    "New York": { Latitude: 43.299, Longitude: -75.562 },
+    "North Carolina": { Latitude: 35.759, Longitude: -79.019 },
+    "North Dakota": { Latitude: 47.551, Longitude: -101.002 },
+    Ohio: { Latitude: 40.417, Longitude: -82.907 },
+    Oklahoma: { Latitude: 35.007, Longitude: -97.092 },
+    Oregon: { Latitude: 43.804, Longitude: -120.554 },
+    Pennsylvania: { Latitude: 41.203, Longitude: -77.194 },
+    "Rhode Island": { Latitude: 41.58, Longitude: -71.477 },
+    "South Carolina": { Latitude: 33.836, Longitude: -81.163 },
+    "South Dakota": { Latitude: 43.969, Longitude: -99.901 },
+    Tennessee: { Latitude: 35.517, Longitude: -86.58 },
+    Texas: { Latitude: 31.968, Longitude: -99.901 },
+    Utah: { Latitude: 39.32, Longitude: -111.093 },
+    Vermont: { Latitude: 44.558, Longitude: -72.577 },
+    Virginia: { Latitude: 37.431, Longitude: -78.656 },
+    Washington: { Latitude: 47.751, Longitude: -120.74 },
+    "West Virginia": { Latitude: 38.597, Longitude: -80.454 },
+    Wisconsin: { Latitude: 43.784, Longitude: -88.787 },
+    Wyoming: { Latitude: 43.075, Longitude: -107.29 },
+  },
+  // Africa
+  Egypt: {
+    Cairo: { Latitude: 30.0444, Longitude: 31.2357 },
+    Alexandria: { Latitude: 31.2001, Longitude: 29.9187 },
+    Giza: { Latitude: 29.987, Longitude: 31.2118 },
+  },
+  Ethiopia: {
+    "Addis Ababa": { Latitude: 9.03, Longitude: 38.74 },
+    Oromia: { Latitude: 7.546, Longitude: 39.642 },
+    Amhara: { Latitude: 11.596, Longitude: 37.969 },
+  },
+  Nigeria: {
+    Lagos: { Latitude: 6.5244, Longitude: 3.3792 },
+    Kano: { Latitude: 12.0022, Longitude: 8.592 },
+    Abuja: { Latitude: 9.0765, Longitude: 7.3986 },
+  },
+  "South Africa": {
+    Gauteng: { Latitude: -26.2708, Longitude: 28.1123 },
+    "Western Cape": { Latitude: -33.2278, Longitude: 21.8569 },
+    "KwaZulu-Natal": { Latitude: -28.5306, Longitude: 30.8958 },
+  },
+
+  // Asia
+  Japan: {
+    Tokyo: { Latitude: 35.6762, Longitude: 139.6503 },
+    Osaka: { Latitude: 34.6937, Longitude: 135.5023 },
+    Hokkaido: { Latitude: 43.2203, Longitude: 142.8635 },
+  },
+
+  // Europe
+  France: {
+    "Île-de-France": { Latitude: 48.8566, Longitude: 2.3522 },
+    "Provence-Alpes-Côte d'Azur": { Latitude: 43.9352, Longitude: 6.0679 },
+    "Auvergne-Rhône-Alpes": { Latitude: 45.764, Longitude: 4.8357 },
+  },
+  Italy: {
+    Lazio: { Latitude: 41.8902, Longitude: 12.4923 },
+    Lombardy: { Latitude: 45.4642, Longitude: 9.19 },
+    Campania: { Latitude: 40.8518, Longitude: 14.2681 },
+  },
+  Spain: {
+    Madrid: { Latitude: 40.4168, Longitude: -3.7038 },
+    Catalonia: { Latitude: 41.3851, Longitude: 2.1734 },
+    Andalusia: { Latitude: 37.3886, Longitude: -5.9823 },
+  },
+
+  // North America
+  Cuba: {
+    Havana: { Latitude: 23.1136, Longitude: -82.3666 },
+    "Santiago de Cuba": { Latitude: 20.0208, Longitude: -75.8292 },
+    Camagüey: { Latitude: 21.3833, Longitude: -77.9167 },
+  },
+  Mexico: {
+    "Mexico City": { Latitude: 19.4326, Longitude: -99.1332 },
+    Jalisco: { Latitude: 20.6597, Longitude: -103.3496 },
+    "Quintana Roo": { Latitude: 19.1817, Longitude: -88.4791 },
+  },
+
+  // Oceania/Australia
+  Fiji: {
+    "Viti Levu": { Latitude: -17.809, Longitude: 178.022 },
+    "Vanua Levu": { Latitude: -16.592, Longitude: 179.314 },
+  },
+  "New Zealand": {
+    Auckland: { Latitude: -36.8485, Longitude: 174.7633 },
+    Wellington: { Latitude: -41.2865, Longitude: 174.7762 },
+    Canterbury: { Latitude: -43.5321, Longitude: 172.6362 },
+  },
+  "Papua New Guinea": {
+    "Port Moresby": { Latitude: -9.4438, Longitude: 147.1803 },
+    Morobe: { Latitude: -6.571, Longitude: 146.444 },
+  },
+
+  // South America
+  Argentina: {
+    "Buenos Aires": { Latitude: -34.6037, Longitude: -58.3816 },
+    Córdoba: { Latitude: -31.4201, Longitude: -64.1888 },
+    "Santa Fe": { Latitude: -31.6107, Longitude: -60.6973 },
+  },
+
+  Colombia: {
+    Bogotá: { Latitude: 4.711, Longitude: -74.0721 },
+    Antioquia: { Latitude: 6.2442, Longitude: -75.5812 },
+    "Valle del Cauca": { Latitude: 3.4516, Longitude: -76.532 },
+  },
+  Peru: {
+    Lima: { Latitude: -12.0464, Longitude: -77.0428 },
+    Cusco: { Latitude: -13.532, Longitude: -71.9675 },
+    Arequipa: { Latitude: -16.409, Longitude: -71.5375 },
+  },
+};
+
+// Example of how to access the data:
+// console.log(countriesStates.India["Tamil Nadu"].Latitude);
+// console.log(countriesStates.Germany.Bavaria);
+export default countriesStates;

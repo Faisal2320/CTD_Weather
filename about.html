@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - CTD Weather</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/about.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+      <nav
+        class="navbar navbar-expand-sm navbar-dark bg-secondary sticky-top"
+    >
+        <a class="navbar-brand" href="index.html">CTD Weather</a>
+        <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" aria-current="page"
+                        >Home</span></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="weather.html">World Weather</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0">
+                <input
+                    class="form-control me-sm-2"
+                    type="text"
+                    placeholder="Search"
+                />
+                <a class="btn btn-success my-2 my-sm-0" >
+                    Search
+                </a>
+            </form>
+        </div>
+    </nav>
+
+
+
+
+
+  <div class="container-fluid video-section">
+  <div class="container ">
+    <h1> About CTD Weather</h1>
+    <p>
+      <strong>CTD Weather</strong> is a simple web app that shows weather forecasts using real-time data from the
+      <a href="https://open-meteo.com/" target="_blank">Open-Meteo API</a>.
+    </p>
+
+    <h3> What It Shows</h3>
+    <ul>
+      <li>Hourly temperature updates for the selected location</li>
+      <li>Current weather conditions like sunny, cloudy, or rainy</li>
+      <li>Navigation between temperature and condition views</li>
+    </ul>
+
+    <h3> How It Works</h3>
+    <ul>
+      <li>Gets your location using the browser’s Geolocation API</li>
+      <li>Stores coordinates in local storage for performance</li>
+      <li>Requests data only when needed for speed and efficiency</li>
+    </ul>
+
+    <h3>Tools & Technologies</h3>
+    <ul>
+      <li>HTML, CSS, JavaScript (ES6)</li>
+      <li>Bootstrap 5 for responsive design</li>
+      <li>Open-Meteo API for forecast data</li>
+    </ul>
+
+    <h3>Purpose</h3>
+    <p>
+      This project was built as a practice app for working with APIs, creating interactive interfaces, and handling multiple endpoints. It helps demonstrate skills in asynchronous programming, DOM manipulation, and modern front-end development.
+    </p>
+
+    <a href="index.html" class="btn btn-primary mt-3">← Back to Home</a>
+  </div>
+  </div>
+</body>
+</html>
